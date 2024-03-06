@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #d2f080;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-box {
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+            color: #333333;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            color: #666666;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .contact-info:hover {
+            background-color: #f2f2f2;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .contact-icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact-info div {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .contact-info div strong {
+            font-weight: bold;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <hr>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <img src="location.png" alt="Address">
+            </div>
+            <div>
+                <center> <strong>Address:</strong><br>
+                    123 Main Street, City, State ZIP   </center>
+                
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <img src="phone.jpg" alt="Phone">
+            </div>
+            <div>
+                 <strong>Phone:</strong><br>
+                    +1 123 456 7890
+                
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <img src="email.png" alt="Email">
+            </div>
+            <div>
+                <strong>Email:</strong><br>
+                example@example.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>

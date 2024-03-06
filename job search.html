@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JOB-SEARCH</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("wallpaper.jpg"); /* Replace with the path to your desired background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .search-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 80%;
+            margin-left: 30%; /* Add this property to align the container to the right */
+        }
+        
+        .search-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .search-container input[type="text"],
+        .search-container select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        
+        .search-container button {
+            padding: 15px 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.3s ease-in-out; /* Add the transition property for animation */
+        }
+        
+        .search-container button:hover {
+            transform: scale(1.1); /* Add the scale transformation on hover */
+        }
+    </style>
+</head>
+<body >
+
+            <div class="search-container">
+            <center><h1>FIND YOUR DESIRED JOB!</h1></center>
+            <form action ="D_stuff.php" method="GET">
+
+           <!--  <label for="jobType"><b>Job Type:</b></label>
+            <select id="jobType" name="jobType">
+                <option value="">Any</option>
+                <option value="full-time" name="jobType">Full-time</option>
+                <option value="part-time" name="jobType">Part-time</option>
+                <option value="contract" name="jobType">Contract</option>
+            </select>
+            <br><br> -->
+            
+            
+            <label for="category"><b>Category:</b></label>
+            <select id="category" name="category">
+                <option value="">Any</option>
+                <option value="technology" name="category">Technology</option>
+                <option value="sales" name="category">Sales</option>
+                <option value="finance" name="category">Finance</option>
+                <option value="Office Stuff" name="category">Office Stuff</option>
+                <option value="Driver" name="category">Driver</option>
+                <option value="Customer Service" name="category">Customer Service</option>
+                <option value="Engineering" name="category">Engineering</option>
+                <option value="Education" name="category">Education</option>
+                <option value="Healthcare" name="category">Healthcare</option>
+                <option value="Marketing" name="category">Marketing</option>
+            </select>
+            <br><br>
+
+            <center>
+            <button onclick="searchJobs()" name="Search">Search</button>
+            </center>
+        </form>
+        </div>
+    
+    
+    <script>
+        function searchJobs() {
+            var jobType = document.getElementById("jobType").value;
+            var category = document.getElementById("category").value;
+            var location = document.getElementById("location").value;
+            
+            // Perform search based on the selected values
+            
+            // Replace the line below with your actual search implementation
+            console.log("Searching for jobs with the following criteria:");
+            console.log("Job Type: " + jobType);
+            console.log("Category: " + category);
+            console.log("Location: " + location);
+            
+            animateButton(); // Call the animation function
+        }
+        
+        function animateButton() {
+            var button = document.querySelector("button");
+            button.classList.add("animated");
+            
+            setTimeout(function() {
+                button.classList.remove("animated");
+            }, 300);
+        }
+    </script>
+</body>
+</html>

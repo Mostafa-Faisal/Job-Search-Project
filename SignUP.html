@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dfec1f;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+    }
+    .background-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%);
+      z-index: -1;
+      animation: moveGradient 5s linear infinite;
+    }
+    .register-container {
+      margin-left: 250px;
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top: 20px;
+      animation: slideInUp 1s ease;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      margin-top: 20px;
+      animation: pulse 1s infinite;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .register-btn {
+      background-color: #2196F3;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      margin-top: 10px;
+      animation: pulse 1s infinite;
+    }
+    .register-btn:hover {
+      background-color: #1976D2;
+    }
+    @keyframes moveGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.05);
+      }
+    }
+    body{
+                background-repeat: no-repeat;
+                background-size: auto 100%; /* Set width to auto and height to 100% */
+                background-position: right top;
+                background-attachment: fixed;
+
+        }
+  </style>
+</head>
+<body background="looking-for-a-job-job.gif">
+  <div class="background-animation"></div>
+  <div class="register-container">
+    <h1 style="color: #ff0000;">SIGN UP</h1>
+	
+   <form action="projectREG.php" method="post">
+   
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+	  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+	  
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username1" name="username" required>
+      </div>
+	  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password1" name="password" required>
+      </div>
+	  <br>
+	  
+   </form>
+  <a href="file:///E:/HTML_Cods/DBMS%20Preoject/Register5.html" class="register-btn">Sign Up</a>
+</body>
+</html>
